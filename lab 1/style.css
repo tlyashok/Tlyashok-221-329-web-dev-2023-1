@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.photo {
+    height: 300px;
+}
+
+.photo img {
+    margin-left: 20%;
+    height: 100%;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-image: url(src/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
