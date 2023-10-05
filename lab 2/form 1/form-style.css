@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+label.radio-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.checkbox-label {
+    display: block;
+}
+
+.margin_element{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: flex;
+}
+
+.inline *{
+    margin-right: 5px;
+}

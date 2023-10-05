@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <h1>Форма обратной связи</h1>
+    <form method="post" action="https://httpbin.org/post">
+        <div class="margin_element">
+            <label for="fio">ФИО</label>
+            <input type="text" name="fio" id="fio" placeholder="Введите ФИО" value="Иванов Иван Иваныч">
+        </div>  
+
+        <div class="margin_element">
+            <label for="email">Электронная почта</label>
+            <input type="email" name="email" id="email" required>
+
+        </div>
+
+        <fieldset class="margin_element">
+            <legend>Как вы о нас узнали?</legend>
+    
+            <div class="inline margin_element">
+                <input type="radio" name="source" id="friends">
+                <label for="friends">Друзья</label>
+            </div>
+    
+            <div class="inline margin_element">
+                <input type="radio" name="source" id="advertising">
+                <label for="advertising">Реклама</label>
+            </div>
+
+            <div class="inline margin_element">
+                <input type="radio" name="source" id="another_site">
+                <label for="another_site">С другого сайта</label>
+            </div>
+        </fieldset>
+
+        <div class="margin_element">
+            <label for="msg_type">Тип обращения</label>
+            <select name="msg_type" id="msg_type">
+                <option value="1">Жалоба</option>
+                <option value="2">Предложение</option>
+            </select>
+        </div>
+
+        <div class="margin_element">
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <div class="margin_element">
+            <label for="attachment">Вложения:</label>
+            <input type="file" id="attachment" name="attachment">
+        </div>
+
+        <div class="margin_element inline">
+            <label for="consent" class="checkbox-label">Даю согласие на обработку персональных данных:</label>
+            <input type="checkbox" id="consent" name="consent" required>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    
+
+</body>
+</html>
