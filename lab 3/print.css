@@ -1,0 +1,27 @@
+/* Стили для печати */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .header, .footer {
+        display: none;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .image-gallery {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .about-us form {
+        max-width: none;
+        margin: 0;
+    }
+}
