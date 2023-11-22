@@ -1,0 +1,47 @@
+#game {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#board {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 90px;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+
+.message {
+    border: 1px solid black;
+    max-width: 200px;
+    padding: 10px;
+    margin: 3px auto;
+}
+
+.error {
+    background-color: #c81e1e;
+    border-color: #620202;
+}
+
+.success {
+    background-color: #16cf01;
+    border-color: #014f08;
+}
