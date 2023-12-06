@@ -1,0 +1,161 @@
+body {
+    margin: 5rem 10rem;
+    font-family: "Lucida Console", "Courier New";
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#autocomplete {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#searchInput {
+    border: 2px solid #e74c3c;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#suggestionsList {
+    box-sizing: border-box;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+}
+
+#suggestionsList li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestionsList li:hover {
+    background-color: #f2f2f2;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#recordPerPage {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#shownFactsOnPage {
+    font-size: 16px;
+}
+
+.page-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-buttons button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.page-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+}
+
+.pages button {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 2px;
+    width: 30px;
+}
+
+.pages button:hover {
+    background-color: #2980b9;
+}
+
+#currentPageDisplay {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-top: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.line {
+    background-color: #ccc;
+    height: 1px;
+    margin: 20px 0;
+}
+
+
+.record {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.record-name {
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.record-text {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.selected {
+    background-color: rgb(255, 217, 0) !important;
+    color: #000;
+}
+
+.currentPage {
+    margin: 5px;
+}

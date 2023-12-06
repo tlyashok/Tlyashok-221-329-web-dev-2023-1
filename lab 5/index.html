@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="autocomplete" class="mfont">
+            <input type="text" id="searchInput" placeholder="Поиск" oninput="myautocomplete()">
+            <ul id="suggestionsList"></ul>
+        </div>
+
+        <label for="recordPerPage">Фактов на странице</label>
+        <select name="recordPerPage" id="recordPerPage">
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+        <p id="shownFactsOnPage">
+            Показаны записи с <span id="start">1</span> по <span id="end">1</span> из <span id="totalCount"></span>
+        </p>
+        <div class="mainBody">
+            
+        </div>
+        <div class="currentPage">
+            <p id="currentPageDisplay"></p>
+        </div>
+        <div class="page-buttons">   
+            <button id="prevPage">Предыдущая страница</button>
+            <div class="pages"></div>
+            <button id="nextPage">Следующая страница</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
