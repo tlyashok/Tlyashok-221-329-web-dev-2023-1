@@ -1,0 +1,35 @@
+p {
+    font-size: large;
+}
+
+section {
+    padding: 60px 0;
+}
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.list-group-item::before {
+    content: "\2713"; /* Зеленая галочка */
+    color: #28a745; /* Зеленый цвет */
+    font-size: 1.2em;
+    margin-right: 10px;
+    float: left;
+}
+
+.bg-custom {
+    background-color: #495057 !important; /* Синевато-серый цвет, можете изменить по необходимости */
+}
+
+.custom-li {
+    border: none;
+    color: #ffffff;
+}
+
+.text-custom {
+    color: #ffffff; /* Белый цвет текста */
+}
+
+
+
