@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="src\logo.svg" alt="Логотип" height="70px" width="70px"></a>
+            <div class="d-flex flex-column">
+                <span class="fs-3 fw-bold">Путешественник</span>
+                <span class="fs-6 text-end">Экскурсии по Москве</span>
+            </div>
+            <button class="btn btn-dark ms-auto">Личный кабинет</button>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div id="notification" class="alert alert-success d-none" role="alert">
+            Уведомление: Успешно выполнено.
+        </div>
+    </div>
+
+    <div class="container-fluid py-3 bg-dark text-light">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 my-2 d-flex align-items-center justify-content-center">
+                    <img src="src\img-company.jpg" class="img-fluid rounded-2 w-75" alt="Изображение компании">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="">
+                        <p class="me-md-5">Добро пожаловать в <b>Путешественник</b> — вашего проводника в увлекательный мир экскурсий по Москве! Мы гордимся предоставлением уникальных маршрутов, которые позволяют вам открыть для себя всю красоту и историю этого удивительного города. Наши гиды — профессионалы, готовые поделиться своими знаниями и любовью к Москве.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="mb-3">
+            <label for="startAddress" class="form-label">Откуда вы хотите начать путешествие:</label>
+            <input type="text" class="form-control" id="startAddress" placeholder="Введите адрес">
+        </div>
+        <button class="btn btn-dark" onclick="proceedRoute()">Начать</button>
+        <div id="map">
+
+        </div>
+    </div>
+
+    <div id="mapContainer" class="container mt-3">
+        <!-- Здесь может быть ваш код для вставки интерактивной карты (например, 2ГИС) -->
+        <!-- Интегрируйте карту или API для прокладывания маршрутов -->
+    </div>
+
+    <div class="container mt-3">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal">Оформить заявку</button>
+    </div>
+
+    <!-- Модальное окно для оформления заявки -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Оформление заявки</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Форма для ввода деталей заказа -->
+                    <!-- Добавьте необходимые поля, например: название маршрута, выбранный гид, дата, количество человек и др. -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container mt-5 fixed-bottom">
+        <!-- Ваш код для футера с контактными данными -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Пример обработчика события для отображения уведомления
+            document.getElementById('startAddress').addEventListener('change', function () {
+                // Покажем уведомление
+                document.getElementById('notification').classList.remove('d-none');
+                // Через 5 секунд скроем уведомление
+                setTimeout(function () {
+                    document.getElementById('notification').classList.add('d-none');
+                }, 5000);
+            });
+
+            // Пример функции для обработки прокладывания маршрута
+            function proceedRoute() {
+                // Здесь можно добавить код для вызова API и прокладывания маршрута
+                // Пример: вызов функции, которая обрабатывает маршрут и отображает его на карте
+                // showRouteOnMap();
+            }
+        </script>
+    </body>
+</html>
